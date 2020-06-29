@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+
+    <h3>Edit App</h3>
+
+    <br>
+
+    <div class="container">
+        <form class="needs-validation" action="" method="post" enctype="multipart/form-data" novalidate>
+            <!-- Buttons -->
+            <div class="form-group row">
+                <!-- Back to My Apps -->
+                <div class="col-sm-2">
+                    <a href="{{ url_for('view_apps') }}">< My Apps</a>
+                </div>
+
+                <!-- Cancel button -->
+                <div class="col-sm-1">
+                    <a href="{{ url_for('view_apps') }}" class="btn btn-danger">Cancel</a>
+                </div>
+
+                <!-- Save button -->
+                <div class="col-sm-1">
+                    <button type="submit" class="btn btn-primary" name="save_edits">Save</button>
+                </div>
+            </div>
+
+            <!-- App Name -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">App Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="app_name" value="{{ app_name }}" required>
+                    <div class="invalid-feedback">
+                        C'mon, every app deserves a name!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" name="description" rows="3" required>{{ app_description }}</textarea>
+                    <div class="invalid-feedback">
+                        Tell us the amazing things your app does!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Format -->
+            <div class="form-group row">
+                <div class="col-sm-2">Data Format</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="data-radios" value="download_data" onclick="streamingDisable()" {% if not streaming %} checked {% endif %}>
+                        <label class="form-check-label">Download</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="data-radios" value="stream_data" onclick="streamingEnable()" {% if streaming %} checked {% endif %}>
+                        <label class="form-check-label">Streaming</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Streaming Endpoint -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Endpoint</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="stream_endpoint" value="{{ stream_endpoint }}" id="streaming_url_input" {% if not streaming %} disabled {% endif %}>
+                    <small class="form-text text-muted">
+                        <p>Endpoint must be formatted as &lt;IPv4 address or hostname&gt;:&lt;Port&gt;</p>
+                        <p>Data will only be sent to the provided endpoint if <b>Streaming</b> is selected.</p>
+                    </small>
+                </div>
+            </div>
+
+            <!-- Permissions -->
+            <div class="form-group row">
+                <div class="col-sm-2">Permissions</div>
+                <div class="col-sm-10">
+                    {% for p in permissions %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="{{ p[0] }}" {% if p[1] %} checked {% endif %}>
+                        <label class="form-check-label">{{ p[0].replace('_', ' ') }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Buttons -->
+            <div class="form-group row">
+                <!-- Space -->
+                <div class="col-sm-2"></div>
+
+                <!-- Cancel button -->
+                <div class="col-sm-1">
+                    <a href="{{ url_for('view_apps') }}" class="btn btn-danger">Cancel</a>
+                </div>
+
+                <!-- Save button -->
+                <div class="col-sm-1">
+                    <button type="submit" class="btn btn-primary" name="save_edits">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+// Obtained from https://getbootstrap.com/docs/4.0/components/forms/#validation
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+// Disable or enable textbox for Streaming Endpoint depending on the status of the Download/Streaming radio buttons
+function streamingEnable() {
+    document.getElementById("streaming_url_input").disabled = false;
+}
+
+function streamingDisable() {
+    document.getElementById("streaming_url_input").disabled = true;
+    document.getElementById("streaming_url_input").value = '';
+}
+</script>
+
+{% endblock %}

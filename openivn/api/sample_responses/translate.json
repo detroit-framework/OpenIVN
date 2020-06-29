@@ -1,0 +1,24 @@
+{
+  "data": {
+    "Speed (OBD)(mph)": {
+      "average_freq": 2.677806460028666,
+      "dbc": {
+        "Coefficient": 0.012406577623097133,
+        "DBC": 2,
+        "End": 15,
+        "ID": 1045,
+        "Intercept": -0.23503691156999196,
+        "Start": 0,
+        "column": "Speed (OBD)(mph)"
+      },
+      "series": [
+        1365965436.8621922,
+        1364848858.399283,
+        1364847604.0818787,
+        1364736081.3680313
+      ]
+    }
+  },
+  "status": "Translated",
+  "url": "/api/v1/translate/"
+}

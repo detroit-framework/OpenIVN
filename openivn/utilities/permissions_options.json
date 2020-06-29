@@ -1,0 +1,122 @@
+{
+  "Acceleration": {
+    "ACCEL_SENSOR_X": "Acceleration Sensor (X axis)",
+    "ACCEL_SENSOR_Y": "Acceleration Sensor (Y axis)",
+    "ACCEL_SENSOR_Z": "Acceleration Sensor (Z axis)"
+  },
+  "Battery": {
+    "VOLTAGE": "Voltage (Control Module)"
+  },
+  "Doors": {
+    "LOCK_D": "Lock driver's side",
+    "UNLOCK_D": "Unlock driver's side",
+    "LOCK_P": "Lock passenger's side",
+    "UNLOCK_P": "Unlock passenger's side",
+    "DOOR_OPEN_D": "Driver's side door open",
+    "DOOR_CLOSE_D": "Driver's side door close",
+    "DOOR_OPEN_P": "Passenger's side door open",
+    "DOOR_CLOSE_P": "Passenger's side door close",
+    "DOOR_OPEN_LB": "Left back door open",
+    "DOOR_CLOSE_LB": "Left back door close",
+    "DOOR_OPEN_RB": "Right back door open",
+    "DOOR_CLOSE_RB": "Right back door close"
+  },
+  "Engine_Information": {
+    "IN_MANIFOLD_PRESSURE": "Intake Manifold Pressure",
+    "IN_AIR_TEMP": "Intake Air Temperature",
+    "ENGINE_COOLANT_TEMP": "Engine Coolant Temperature"
+  },
+  "Engine_Utilization": {
+    "ENGINE_RPM": "Engine RPM",
+    "ENGINE_LOAD": "Engine Load (Absolute)",
+    "TURBO_BOOST_VACUUM_GAUGE": "Turbo Boost & Vacuum Gauge"
+  },
+  "Fuel_Information": {
+    "FUEL_RAIL_PRESSURE": "Fuel Rail Pressure",
+    "FUEL_FLOW_RATE": "Fuel Flow Rate"
+  },
+  "Gyroscope": {
+    "GYRO_Y": "G(y)",
+    "GYRO_Z": "G(z)"
+  },
+  "HVAC": {
+    "AC_FAN_ON": "Turn on heating/AC fan",
+    "AC_FAN_SPEED_UP": "Incremental fan speed increase",
+    "AC_FAN_SPEED_DOWN": "Incremental fan speed decrease",
+    "TEMP_UP_65_75": "Increase temperature incrementally 65-75",
+    "TEMP_DOWN_75_65": "Decrease temperature incrementally 75-65",
+    "AIR_CIRC_ON": "Air circulation button on",
+    "AIR_CIRC_OFF": "Air circulation button off"
+  },
+  "Hood": {
+    "HOOD_OPEN": "Open hood",
+    "HOOD_CLOSE": "Close hood"
+  },
+  "Lights": {
+    "HEADLIGHTS_OFF_ON": "Headlights turned on",
+    "HEADLIGHTS_ON_OFF": "Headlights turned off",
+    "HAZARDS_ON": "Hazard lights turned on",
+    "HAZARDS_OFF": "Hazard lights turned off",
+    "INT_LIGHTS_ON": "Interior lights all turned on",
+    "INT_LIGHTS_OFF": "Interior lights all turned off"
+  },
+  "Mirrors": {
+    "MIRROR_D": "Driver's side mirror (left, right, up, down)",
+    "MIRROR_P": "Passenger's side mirror (left, right, up, down)"
+  },
+  "Parking_Brake": {
+    "PARKING_BRAKE_ACT": "Activate parking brake",
+    "PARKING_BRAKE_REL": "Release parking brake"
+  },
+  "Pedal_Positions": {
+    "ACCEL_PEDAL_POS_B": "Accelerator Pedal Position B",
+    "ACCEL_PEDAL_POS_D": "Accelerator Pedal Position D",
+    "ACCEL_PEDAL_POS_E": "Accelerator Pedal Position E"
+  },
+  "Position_Information": {
+    "BAROMETRIC_PRESSURE": "Barometric Pressure",
+    "AMBIENT_AIR_TEMP": "Ambient Air Temperature",
+    "ALTITUDE": "Altitude",
+    "BEARING": "Bearing",
+    "LAT_DEG": "Latitude Degree",
+    "LAT_DEC": "Latitude Decimal",
+    "LONG_DEG": "Longitude Degree",
+    "LONG_DEC": "Longitude Decimal"
+  },
+  "Seat_Belts": {
+    "BUCKLE_DRIVER": "Buckle driver",
+    "UNBUCKLE_DRIVER": "Unbuckle driver"
+  },
+  "Speed": {
+    "SPEED": "Vehicle speed"
+  },
+  "Torque": {
+    "TORQUE": "Torque"
+  },
+  "Trunk": {
+    "T_OPEN": "Open trunk",
+    "T_CLOSE": "Close trunk"
+  },
+  "Vehicle_Turning": {
+    "TURN_LEFT": "Left turn signal",
+    "TURN_RIGHT": "Right turn signal",
+    "STEERING_WHEEL_ANGLE": "Steering Wheel Angle"
+  },
+  "Windows": {
+    "WINDOW_DOWN_D": "Driver's side window down",
+    "WINDOW_UP_D": "Driver's side window up",
+    "WINDOW_DOWN_P": "Passenger's side window down",
+    "WINDOW_UP_P": "Passenger's side window up",
+    "WINDOW_DOWN_LB": "Left back window down",
+    "WINDOW_UP_LB": "Left back window up",
+    "WINDOW_DOWN_RB": "Right back window down",
+    "WINDOW_UP_RB": "Right back window up"
+  },
+  "Windshield_Wipers": {
+    "WIPERS_SETTING_ONCE": "Windshield wipers activated once",
+    "WIPERS_SETTING_0_1": "Windshield wipers setting 1",
+    "WIPERS_SETTING_1_2": "Windshield wipers setting 1-2",
+    "WIPERS_SETTING_2_3": "Windshield wipers setting 2-3",
+    "WIPERS_SETTING_FLUID": "Windshield wiper fluid"
+  }
+}

@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+
+    <h3>Developer Dashboard</h3>
+
+    <br>
+
+    <div class="container m-0 p-0">
+        <div class="row m-0 p-0">
+            <!-- Navigation Sidebar -->
+            <div class="col-2 m-0 p-0">
+                <div class="list-group">
+                    <a href="{{ url_for('show_index') }}" class="list-group-item list-group-item-action text-light bg-secondary">
+                        Documentation
+                    </a>
+                    <a href="{{ url_for('register') }}" class="list-group-item list-group-item-action">
+                        Register New App
+                    </a>
+                    <a href="{{ url_for('view_apps') }}" class="list-group-item list-group-item-action">
+                        My Apps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Documentation Content -->
+            <div class="col-10 m-0 pl-4 p-0">
+                <div class="container rounded m-0 pl-2 pr-2 pb-2">
+                    <h3>Documentation</h3>
+
+                    <br>
+
+                    <!-- Temp UDP Testing -->
+                    <div class="card">
+                        <h5 class="card-header">UDP Testing</h5>
+                        <div class="card-body">
+                            <p class="card-text">Click <a href="{{ url_for('test_udp') }}">here</a> to view UDP data received on server.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- Temp TCP Testing -->
+                    <div class="card">
+                        <h5 class="card-header">TCP Testing</h5>
+                        <div class="card-body">
+                            <p class="card-text">Click <a href="{{ url_for('test_tcp') }}">here</a> to view TCP data received on server.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- About -->
+                    <div class="card">
+                        <h5 class="card-header">About</h5>
+                        <div class="card-body">
+                            <h5 class="class-title">What is DETROIT?</h5>
+                            <p class="card-text">DETROIT is a platform designed to facilitate third-party access to vehicular data.</p>
+
+                            <h5 class="class-title">Wait a second, isn't Detroit the name of a city?</h5>
+                            <p class="card-text">Indeed, Detroit is the name of the largest and most populous city in Michigan. However, DETROIT stands for <b>D</b>ata Coll<b>e</b>ction, <b>Tr</b>anslati<b>o</b>n, and Sharing for Rapid Veh<b>i</b>cular App Developmen<b>t</b>.</p>
+
+                            <h5 class="class-title">What does DETROIT have to do with OpenIVN?</h5>
+                            <p class="card-text">OpenIVN is the name of software running as DETROIT's backend. The IVN in OpenIVN is short for Intra-Vehicular Network.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- Register New App -->
+                    <div class="card">
+                        <h5 class="card-header">Register New App</h5>
+                        <div class="card-body">
+                            <h5 class="class-title">Step 1</h5>
+                            <p class="card-text">Register an app by clicking on <b>Register New App</b> in the sidebar.</p>
+                            <h5 class="class-title">Step 2</h5>
+                            <p class="card-text">Fill out the form to provide the following information about the app:</p>
+                            <ul>
+                                <li>App name</li>
+                                <li>A description of the app's purpose. This will be displayed to users so they may determine if they'd like to provide share their data with your app.</li>
+                                <li>Select whether you'd like the data to be made available for download or streamed in near real-time to a specified endpoint.</li>
+                                <li>Select which data permissions you'd like to request users' approval. (See the permissions table at the bottom of this page for details.)</li>
+                            </ul>
+
+                            <h5 class="class-title">Step 3</h5>
+                            <p class="card-text">Submit your app.</p>
+                            <h5 class="class-title">Step 4</h5>
+                            <p class="card-text">DETROIT will review your submission shortly. You will be informed of your app's status via the email registered with your account.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- My Apps -->
+                    <div class="card">
+                        <h5 class="card-header">My Apps</h5>
+                        <div class="card-body">
+                            <p class="card-text">You may view your apps by clicking on <b>My Apps</b> in the sidebar.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- Permissions -->
+                    <div class="card">
+                        <h5 class="card-header">Permissions</h5>
+                        <div class="card-body">
+                            <div class="table-responsive-sm">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Permission Category</th>
+                                            <th scope="col">Mapping</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for p in permissions %}
+                                    <tr>
+                                        <td>{{ p.replace('_', ' ') }}</td>
+                                        <td>
+                                            <ul class="list-unstyled m-0 p-0">
+                                            {% for x in permissions[p] %}
+                                                <li>{{ permissions[p][x] }}</li>
+                                            {% endfor %}
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

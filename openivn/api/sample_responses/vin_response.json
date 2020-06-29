@@ -1,0 +1,49 @@
+{
+  "make": "MAKE",
+  "model": "MODEL",
+  "trim_options": [
+    {
+      "default": true,
+      "trim": "2000 Sample Car",
+      "trim_id": "000001"
+    },
+    {
+      "default": false,
+      "trim": "2001 Sample Car",
+      "trim_id": "000002"
+    },
+    {
+      "default": false,
+      "trim": "2002 Sample Car",
+      "trim_id": "000003"
+    },
+    {
+      "default": false,
+      "trim": "2003 Sample Car",
+      "trim_id": "000004"
+    },
+    {
+      "default": false,
+      "trim": "2004 Sample Car",
+      "trim_id": "000005"
+    },
+    {
+      "default": false,
+      "trim": "2005 Sample Car",
+      "trim_id": "000006"
+    },
+    {
+      "default": false,
+      "trim": "2006 Sample Car",
+      "trim_id": "000007"
+    },
+    {
+      "default": false,
+      "trim": "2007 Sample Car",
+      "trim_id": "000008"
+    }
+  ],
+  "url": "/api/v1/vin/1000000000000000",
+  "wheelbase": 100,
+  "year": "2000"
+}

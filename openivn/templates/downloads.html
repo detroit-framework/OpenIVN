@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+
+    <h3>Downloads</h3>
+    <p><a href="{{ url_for('view_apps') }}">< My Apps</a></p>
+
+    {% if files|length == 0 %}
+    <p class="text-secondary">No traces available for <b>{{ app_name }}</b>.</p>
+    {% else %}
+    <p class="text-secondary">The following traces are available for <b>{{ app_name }}</b>:</p>
+    {% endif %}
+
+    <br>
+
+    <!-- List downloads, if available -->
+    {% if files|length > 0 %}
+    <div class="container m-0 p-0">
+        {% for vehicle_group in files %}
+        <h5>{{ vehicle_group }}</h5>
+        <ul>
+            {% for trace in files[vehicle_group] %}
+                <li class="pb-2">{{ trace[0] }} <a href="{{ url_for('download_trace', trace_id=trace[1], format='json') }}" class="btn btn-primary btn-sm">JSON</a> <a href="{{ url_for('download_trace', trace_id=trace[1], format='mat') }}" class="btn btn-primary btn-sm">MATLAB</a> <a href="{{ url_for('download_trace', trace_id=trace[1], format='npy') }}" class="btn btn-primary btn-sm">NUMPY</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

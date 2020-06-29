@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+
+    <h3>Developer Dashboard</h3>
+
+    <br>
+
+    <div class="container m-0 p-0">
+        <div class="row m-0 p-0">
+            <!-- Navigation Sidebar -->
+            <div class="col-2 m-0 p-0">
+                <div class="list-group">
+                    <a href="{{ url_for('show_index') }}" class="list-group-item list-group-item-action">
+                        Documentation
+                    </a>
+                    <a href="{{ url_for('register') }}" class="list-group-item list-group-item-action">
+                        Register New App
+                    </a>
+                    <a href="{{ url_for('view_apps') }}" class="list-group-item list-group-item-action text-light bg-secondary">
+                        My Apps
+                    </a>
+                </div>
+            </div>
+
+            <!-- App Content -->
+            <div class="col-10 m-0 pl-4 p-0">
+                <div class="container rounded m-0 pl-2 pr-2 pb-2">
+                    <h3>My Apps</h3>
+
+                    <br>
+
+                    {% if apps|length == 0 %}
+                    <p class="text-secondary">It looks like you haven't registered any apps yet.</p>
+                    <p class="text-secondary">Register an app <a href="{{ url_for('register') }}">here</a> or click on <b>Register New App</b> in the sidebar.</p>
+                    {% else %}
+                    <div class="row">
+                        {% for app in apps %}
+                        <div class="col-lg-6">
+                            <div class="card mb-3">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-9 align-self-center">
+                                            <h5 class="m-0">{{ app.name }}</h5>
+                                        </div>
+                                        <div class="col-sm-3 text-right">
+                                            <a href="{{ url_for('edit_app', app_id=app.app_id) }}" class="text-primary">Edit</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h6>Description</h6>
+                                    <p class="card-text text-secondary">{{ app.description }}</p>
+
+                                    <h6>Permissions</h6>
+                                    <ul class="text-secondary">
+                                        {% for p in app.permissions %}
+                                        <li>{{ p.replace('_', ' ') }}</li>
+                                        {% endfor %}
+                                    </ul>
+
+                                    <h6>Data Format</h6>
+                                    {% if app.streaming %}
+                                    <p class="card-text text-secondary">Streaming to <code>{{ app.stream_endpoint }}</code> </p>
+                                    {% else %}
+                                    <a href="{{ url_for('view_downloads', app_id=app.app_id) }}" class="btn btn-primary">Download Data</a>
+                                    {% endif %}
+                                </div>
+<!--                                <div class="card-footer text-muted">-->
+<!--                                    la la la-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

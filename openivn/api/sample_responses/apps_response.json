@@ -1,0 +1,33 @@
+{
+  "apps": [
+    {
+      "id": 1,
+      "name": "TestApp",
+      "author": "John Doe",
+      "description": "This is a sample app description.",
+      "url": "/api/v1/apps/1/"
+    },
+    {
+      "id": 2,
+      "name": "SampleApp",
+      "author": "John Doe",
+      "description": "This is a sample app description.",
+      "url": "/api/v1/apps/2/"
+    },
+    {
+      "id": 3,
+      "name": "ExampleApp",
+      "author": "John Doe",
+      "description": "This is a sample app description.",
+      "url": "/api/v1/apps/3/"
+    },
+    {
+      "id": 4,
+      "name": "LastApp",
+      "author": "John Doe",
+      "description": "This is a sample app description.",
+      "url": "/api/v1/apps/4/"
+    }
+  ],
+  "url": "/api/v1/apps/"
+}

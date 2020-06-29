@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>DETROIT</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top rounded">
+            <a class="navbar-brand" href="{{ url_for('show_index') }}">DETROIT</a>
+            <div class="navbar-nav ml-auto">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <span class="navbar-text mr-3">{{current_user.name}}</span>
+                    </li>
+                    <li>
+                        <a class="btn btn-outline-secondary nav-item nav-link" href="{{ url_for('logout') if current_user.is_authenticated else  url_for('login')}}">{{"Log Out" if current_user.is_authenticated else "Log In"}}</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <br>
+
+        <!-- Content -->
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

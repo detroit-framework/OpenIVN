@@ -1,0 +1,669 @@
+{
+  "data": {
+    "Acceleration Sensor(X axis)(g)": [
+      {
+        "Coefficient": -0.0015134221052915372,
+        "DBC": 1,
+        "End": 15,
+        "ID": 146,
+        "Intercept": 2.976307754379152,
+        "Start": 3,
+        "column": "Acceleration Sensor(X axis)(g)"
+      }
+    ],
+    "Acceleration Sensor(Y axis)(g)": [
+      {
+        "Coefficient": 0.0006985965609715553,
+        "DBC": 1,
+        "End": 31,
+        "ID": 146,
+        "Intercept": -0.4714133370387783,
+        "Start": 19,
+        "column": "Acceleration Sensor(Y axis)(g)"
+      }
+    ],
+    "Acceleration Sensor(Z axis)(g)": [
+      {
+        "Coefficient": -0.0014938948483610077,
+        "DBC": 1,
+        "End": 31,
+        "ID": 146,
+        "Intercept": 3.2973483953900438,
+        "Start": 19,
+        "column": "Acceleration Sensor(Z axis)(g)"
+      },
+      {
+        "Coefficient": -0.0014589633797178106,
+        "DBC": 2,
+        "End": 31,
+        "ID": 146,
+        "Intercept": 3.2283879549881536,
+        "Start": 19,
+        "column": "Acceleration Sensor(Z axis)(g)"
+      },
+      {
+        "Coefficient": -0.005244438717298643,
+        "DBC": 1,
+        "End": 63,
+        "ID": 119,
+        "Intercept": 1.6600289592185802,
+        "Start": 54,
+        "column": "Acceleration Sensor(Z axis)(g)"
+      },
+      {
+        "Coefficient": -0.005228468920519805,
+        "DBC": 2,
+        "End": 63,
+        "ID": 119,
+        "Intercept": 1.6563491251015339,
+        "Start": 54,
+        "column": "Acceleration Sensor(Z axis)(g)"
+      }
+    ],
+    "Accelerator PedalPosition D(%)": [
+      {
+        "Coefficient": 0.12204003931496502,
+        "DBC": 2,
+        "End": 15,
+        "ID": 516,
+        "Intercept": 16.525168674024115,
+        "Start": 6,
+        "column": "Accelerator PedalPosition D(%)"
+      },
+      {
+        "Coefficient": 0.1214695886121463,
+        "DBC": 1,
+        "End": 15,
+        "ID": 516,
+        "Intercept": 16.527518739809413,
+        "Start": 6,
+        "column": "Accelerator PedalPosition D(%)"
+      }
+    ],
+    "Accelerator PedalPosition E(%)": [
+      {
+        "Coefficient": 0.062368208159790495,
+        "DBC": 2,
+        "End": 15,
+        "ID": 516,
+        "Intercept": 8.078851167588429,
+        "Start": 6,
+        "column": "Accelerator PedalPosition E(%)"
+      },
+      {
+        "Coefficient": 0.06209096702096256,
+        "DBC": 1,
+        "End": 15,
+        "ID": 516,
+        "Intercept": 8.079513326432878,
+        "Start": 6,
+        "column": "Accelerator PedalPosition E(%)"
+      }
+    ],
+    "Altitude": [
+      {
+        "Coefficient": -1.358285917496444,
+        "DBC": 1,
+        "End": 39,
+        "ID": 132,
+        "Intercept": 256.03360597439547,
+        "Start": 34,
+        "column": "Altitude"
+      },
+      {
+        "Coefficient": -1.171231252849839,
+        "DBC": 2,
+        "End": 13,
+        "ID": 1126,
+        "Intercept": 250.22701071574912,
+        "Start": 8,
+        "column": "Altitude"
+      }
+    ],
+    "Ambient air temp(°F)": [
+      {
+        "Coefficient": 0.02665999072018401,
+        "DBC": 2,
+        "End": 47,
+        "ID": 514,
+        "Intercept": 72.01530095893776,
+        "Start": 40,
+        "column": "Ambient air temp(°F)"
+      },
+      {
+        "Coefficient": 0.0834645734376213,
+        "DBC": 2,
+        "End": 23,
+        "ID": 357,
+        "Intercept": 71.99507259590698,
+        "Start": 16,
+        "column": "Ambient air temp(°F)"
+      },
+      {
+        "Coefficient": 0.05856804561047039,
+        "DBC": 1,
+        "End": 23,
+        "ID": 1069,
+        "Intercept": 71.2605081663899,
+        "Start": 17,
+        "column": "Ambient air temp(°F)"
+      },
+      {
+        "Coefficient": 0.10369560021138088,
+        "DBC": 1,
+        "End": 45,
+        "ID": 514,
+        "Intercept": 72.10122425125296,
+        "Start": 40,
+        "column": "Ambient air temp(°F)"
+      },
+      {
+        "Coefficient": 0.07994156862679967,
+        "DBC": 1,
+        "End": 23,
+        "ID": 357,
+        "Intercept": 72.08308308567413,
+        "Start": 16,
+        "column": "Ambient air temp(°F)"
+      }
+    ],
+    "Barometric pressure (from vehicle)(psi)": [
+      {
+        "Coefficient": 0.0048096589126955585,
+        "DBC": 1,
+        "End": 39,
+        "ID": 132,
+        "Intercept": 14.107769843169452,
+        "Start": 34,
+        "column": "Barometric pressure (from vehicle)(psi)"
+      }
+    ],
+    "Bearing": [
+      {
+        "Coefficient": -12.864519098547085,
+        "DBC": 1,
+        "End": 8,
+        "ID": 358,
+        "Intercept": 229.00242721188454,
+        "Start": 4,
+        "column": "Bearing"
+      },
+      {
+        "Coefficient": -1.0393017469120347,
+        "DBC": 2,
+        "End": 16,
+        "ID": 578,
+        "Intercept": 242.34184656489543,
+        "Start": 6,
+        "column": "Bearing"
+      }
+    ],
+    "Engine Coolant Temperature(°F)": [
+      {
+        "Coefficient": 3.177594233701946,
+        "DBC": 2,
+        "End": 31,
+        "ID": 1058,
+        "Intercept": 186.3349128308175,
+        "Start": 28,
+        "column": "Engine Coolant Temperature(°F)"
+      },
+      {
+        "Coefficient": 3.130813168087974,
+        "DBC": 1,
+        "End": 39,
+        "ID": 1086,
+        "Intercept": 186.58973605012244,
+        "Start": 36,
+        "column": "Engine Coolant Temperature(°F)"
+      },
+      {
+        "Coefficient": 3.196797314917861,
+        "DBC": 1,
+        "End": 7,
+        "ID": 342,
+        "Intercept": 186.22347892941644,
+        "Start": 4,
+        "column": "Engine Coolant Temperature(°F)"
+      }
+    ],
+    "Engine Load(Absolute)(%)": [
+      {
+        "Coefficient": 0.6164310442909672,
+        "DBC": 2,
+        "End": 55,
+        "ID": 359,
+        "Intercept": -136.30152276283445,
+        "Start": 46,
+        "column": "Engine Load(Absolute)(%)"
+      },
+      {
+        "Coefficient": 0.6159649084215162,
+        "DBC": 1,
+        "End": 55,
+        "ID": 359,
+        "Intercept": -136.1262923176468,
+        "Start": 46,
+        "column": "Engine Load(Absolute)(%)"
+      }
+    ],
+    "Engine RPM(rpm)": [
+      {
+        "Coefficient": 3.8766507456540156,
+        "DBC": 2,
+        "End": 39,
+        "ID": 516,
+        "Intercept": 42.73359061382894,
+        "Start": 28,
+        "column": "Engine RPM(rpm)"
+      },
+      {
+        "Coefficient": 3.911870583316632,
+        "DBC": 1,
+        "End": 63,
+        "ID": 1071,
+        "Intercept": 30.343257886285528,
+        "Start": 52,
+        "column": "Engine RPM(rpm)"
+      },
+      {
+        "Coefficient": 3.8634519534914564,
+        "DBC": 1,
+        "End": 39,
+        "ID": 516,
+        "Intercept": 48.09175616101379,
+        "Start": 28,
+        "column": "Engine RPM(rpm)"
+      }
+    ],
+    "Fuel Rail Pressure(psi)": [
+      {
+        "Coefficient": 7.556894564699093,
+        "DBC": 2,
+        "End": 55,
+        "ID": 359,
+        "Intercept": -1065.3611274507296,
+        "Start": 46,
+        "column": "Fuel Rail Pressure(psi)"
+      },
+      {
+        "Coefficient": 7.5864697658329225,
+        "DBC": 1,
+        "End": 55,
+        "ID": 359,
+        "Intercept": -1072.6890902357202,
+        "Start": 46,
+        "column": "Fuel Rail Pressure(psi)"
+      }
+    ],
+    "G(x)": [
+      {
+        "Coefficient": -0.01462657186087225,
+        "DBC": 1,
+        "End": 15,
+        "ID": 146,
+        "Intercept": 28.778409449509997,
+        "Start": 3,
+        "column": "G(x)"
+      },
+      {
+        "Coefficient": -0.05327668808606247,
+        "DBC": 1,
+        "End": 53,
+        "ID": 119,
+        "Intercept": 13.13684864086339,
+        "Start": 44,
+        "column": "G(x)"
+      }
+    ],
+    "G(y)": [
+      {
+        "Coefficient": 0.006721636379842578,
+        "DBC": 1,
+        "End": 31,
+        "ID": 146,
+        "Intercept": -4.370235023307572,
+        "Start": 19,
+        "column": "G(y)"
+      }
+    ],
+    "G(z)": [
+      {
+        "Coefficient": -0.014984702194131118,
+        "DBC": 1,
+        "End": 31,
+        "ID": 146,
+        "Intercept": 33.97721327214441,
+        "Start": 19,
+        "column": "G(z)"
+      },
+      {
+        "Coefficient": -0.05233901958455021,
+        "DBC": 2,
+        "End": 63,
+        "ID": 119,
+        "Intercept": 17.494155327104245,
+        "Start": 54,
+        "column": "G(z)"
+      },
+      {
+        "Coefficient": -0.052408602383105886,
+        "DBC": 1,
+        "End": 63,
+        "ID": 119,
+        "Intercept": 17.507421800593292,
+        "Start": 54,
+        "column": "G(z)"
+      },
+      {
+        "Coefficient": -0.014402411557471701,
+        "DBC": 2,
+        "End": 31,
+        "ID": 146,
+        "Intercept": 32.83008783265336,
+        "Start": 19,
+        "column": "G(z)"
+      }
+    ],
+    "Intake Manifold Pressure(psi)": [
+      {
+        "Coefficient": 0.02770531808380564,
+        "DBC": 1,
+        "End": 52,
+        "ID": 1086,
+        "Intercept": -14.636297303875267,
+        "Start": 40,
+        "column": "Intake Manifold Pressure(psi)"
+      }
+    ],
+    "Speed (OBD)(mph)": [
+      {
+        "Coefficient": 0.012406577623097133,
+        "DBC": 2,
+        "End": 15,
+        "ID": 1045,
+        "Intercept": -0.23503691156999196,
+        "Start": 0,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.012415701327215915,
+        "DBC": 2,
+        "End": 63,
+        "ID": 514,
+        "Intercept": -0.2492400338048384,
+        "Start": 48,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.19848532666010066,
+        "DBC": 1,
+        "End": 11,
+        "ID": 1045,
+        "Intercept": -0.1479564568285383,
+        "Start": 0,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.012403728266036813,
+        "DBC": 1,
+        "End": 63,
+        "ID": 514,
+        "Intercept": -0.22027758700317435,
+        "Start": 48,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.07029811056675594,
+        "DBC": 2,
+        "End": 61,
+        "ID": 535,
+        "Intercept": -0.2426586857375952,
+        "Start": 48,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.07027260958996816,
+        "DBC": 2,
+        "End": 45,
+        "ID": 535,
+        "Intercept": -0.22871846149559616,
+        "Start": 32,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.04973525823266865,
+        "DBC": 1,
+        "End": 13,
+        "ID": 119,
+        "Intercept": -0.2999035100317258,
+        "Start": 0,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.017562230301189332,
+        "DBC": 1,
+        "End": 63,
+        "ID": 535,
+        "Intercept": -0.23712849272023107,
+        "Start": 48,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.0702298994617152,
+        "DBC": 1,
+        "End": 45,
+        "ID": 535,
+        "Intercept": -0.19937298462307496,
+        "Start": 32,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.012430125854976866,
+        "DBC": 2,
+        "End": 15,
+        "ID": 119,
+        "Intercept": -0.3083162192626929,
+        "Start": 0,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.14090787443123712,
+        "DBC": 2,
+        "End": 28,
+        "ID": 535,
+        "Intercept": -0.24516033111240176,
+        "Start": 16,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.14081905419290708,
+        "DBC": 2,
+        "End": 12,
+        "ID": 535,
+        "Intercept": -0.22183170871182512,
+        "Start": 0,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.14076792466730098,
+        "DBC": 1,
+        "End": 12,
+        "ID": 535,
+        "Intercept": -0.20392259970964943,
+        "Start": 0,
+        "column": "Speed (OBD)(mph)"
+      },
+      {
+        "Coefficient": 0.07040094383504332,
+        "DBC": 1,
+        "End": 29,
+        "ID": 535,
+        "Intercept": -0.245091708592291,
+        "Start": 16,
+        "column": "Speed (OBD)(mph)"
+      }
+    ],
+    "Torque(Nm)": [
+      {
+        "Coefficient": 0.4046552010268535,
+        "DBC": 1,
+        "End": 15,
+        "ID": 516,
+        "Intercept": 1.5071647479151409,
+        "Start": 6,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 0.303094661766239,
+        "DBC": 1,
+        "End": 23,
+        "ID": 359,
+        "Intercept": -4957.150777134873,
+        "Start": 7,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 0.4011862162087182,
+        "DBC": 2,
+        "End": 15,
+        "ID": 516,
+        "Intercept": 1.5282121280502778,
+        "Start": 6,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 0.3008678441650255,
+        "DBC": 2,
+        "End": 23,
+        "ID": 359,
+        "Intercept": -4920.671631597252,
+        "Start": 7,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 0.2394633790397487,
+        "DBC": 2,
+        "End": 15,
+        "ID": 390,
+        "Intercept": -595.0212436367068,
+        "Start": 3,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 0.23312665452667056,
+        "DBC": 1,
+        "End": 15,
+        "ID": 390,
+        "Intercept": -101.58612926642998,
+        "Start": 5,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 0.3515874755759633,
+        "DBC": 1,
+        "End": 55,
+        "ID": 359,
+        "Intercept": -82.05524514687357,
+        "Start": 46,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 0.3497310510655903,
+        "DBC": 2,
+        "End": 55,
+        "ID": 359,
+        "Intercept": -81.58639903789444,
+        "Start": 46,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 2.155109591079305,
+        "DBC": 1,
+        "End": 55,
+        "ID": 531,
+        "Intercept": -531.5100458484869,
+        "Start": 46,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 0.4490452396340546,
+        "DBC": 1,
+        "End": 63,
+        "ID": 1086,
+        "Intercept": -17.259769787066563,
+        "Start": 53,
+        "column": "Torque(Nm)"
+      },
+      {
+        "Coefficient": 2.0638779024348546,
+        "DBC": 2,
+        "End": 55,
+        "ID": 531,
+        "Intercept": -508.4285247964084,
+        "Start": 46,
+        "column": "Torque(Nm)"
+      }
+    ],
+    "Turbo Boost & Vacuum Gauge(psi)": [
+      {
+        "Coefficient": 0.02770147045294884,
+        "DBC": 1,
+        "End": 52,
+        "ID": 1086,
+        "Intercept": -28.8035775298264,
+        "Start": 40,
+        "column": "Turbo Boost & Vacuum Gauge(psi)"
+      }
+    ],
+    "Voltage (Control Module)(V)": [
+      {
+        "Coefficient": 0.4190809535468403,
+        "DBC": 1,
+        "End": 12,
+        "ID": 1086,
+        "Intercept": 10.658377794671734,
+        "Start": 8,
+        "column": "Voltage (Control Module)(V)"
+      },
+      {
+        "Coefficient": 0.0955657412569008,
+        "DBC": 2,
+        "End": 39,
+        "ID": 130,
+        "Intercept": 6.277189369313865,
+        "Start": 30,
+        "column": "Voltage (Control Module)(V)"
+      },
+      {
+        "Coefficient": 0.1202724394200198,
+        "DBC": 2,
+        "End": 39,
+        "ID": 578,
+        "Intercept": 0.4784063327688717,
+        "Start": 32,
+        "column": "Voltage (Control Module)(V)"
+      },
+      {
+        "Coefficient": 0.09366145648860393,
+        "DBC": 1,
+        "End": 39,
+        "ID": 130,
+        "Intercept": 6.416443194685782,
+        "Start": 30,
+        "column": "Voltage (Control Module)(V)"
+      },
+      {
+        "Coefficient": 0.12049388976192416,
+        "DBC": 1,
+        "End": 39,
+        "ID": 578,
+        "Intercept": 0.46176647231079926,
+        "Start": 32,
+        "column": "Voltage (Control Module)(V)"
+      }
+    ]
+  },
+  "status": "Found",
+  "url": "/api/v1/getDBC/"
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+
+    <h3>TCP Test Data</h3>
+
+    <br>
+
+    <div class="alert alert-secondary" role="alert">
+        <p class="m-0 p-0">Page last updated {{ current_time }}.</p>
+
+        <br>
+
+        <a href="{{ url_for('test_tcp') }}" class="btn btn-primary">Refresh Data</a>
+        <a href="{{ url_for('clear_tcp') }}" class="btn btn-danger">Delete Data</a>
+    </div>
+
+    <br>
+
+    <div class="container m-0 p-0">
+        {% for line in data %}
+        <p>{{ line }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
