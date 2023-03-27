@@ -16,7 +16,7 @@ setup(
         'oauthlib==3.1.0',
         'Flask-Login==0.4.1',
         'pyOpenSSL==19.1.0',
-        'redis==3.4.1',
+        'redis==4.5.3',
         'rq==1.2.2',
         'bitarray==1.2.11',
         'scipy==1.4.1',
