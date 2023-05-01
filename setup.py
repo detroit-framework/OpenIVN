@@ -8,7 +8,7 @@ setup(
     include_package_data=True,
     python_requires=">=3.8",
     install_requires=[
-        'Flask==1.1.1',
+        'Flask==2.3.2',
         'requests==2.22.0',
         'gunicorn==19.9.0',
         'bs4==0.0.1',
