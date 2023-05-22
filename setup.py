@@ -9,7 +9,7 @@ setup(
     python_requires=">=3.8",
     install_requires=[
         'Flask==1.1.1',
-        'requests==2.22.0',
+        'requests==2.31.0',
         'gunicorn==19.9.0',
         'bs4==0.0.1',
         'beautifulsoup4==4.8.1',
